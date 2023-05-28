@@ -1,0 +1,18 @@
+def forfib(n): #function fibonacci sequence using for loop
+               #input: n, non-negative integer
+               #output: list of n + 1 fib. numbers (n nontrivial numbers)
+    if isinstance(n, int) == 1 and n >= 0:          #checks that n is non-negative integer
+        if n == 0:                                  #trivial case
+            forfib = [0]                            #list of one trivial fib. number
+            return forfib
+        elif n == 1:                                #trivial case
+            forfib = [0, 1]                         #list of first two fib. numbers
+            return forfib
+        else: #non-trivial case n >= 2
+            forfib = [0, 1] + [0] * (n - 1)         #concatenate first two fib. numbers w/ list of (n - 1) zeros
+            for i in range(n - 1):                  #for i from zero to n - 2
+                forfib[i + 2] = forfib[i + 1] + forfib[i]       #the next fib. number is the sum of the previous two 
+                
+            return forfib
+    else:                                           #only executes if user inputs invalid 'n'
+        print("n must be a non-negative integer")   #message to input valid 'n'
