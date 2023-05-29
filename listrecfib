@@ -1,8 +1,8 @@
 def listrecfib(n):
-    #function calculating list of first n fib. numbers
-    #input: length of list
-    #output 1: list of n fib. numbers x
-    #output 2: time to calculate 
+        #function calculating list of first n fib. numbers
+        #input: length of list
+        #output 1: list of n fib. numbers, x
+        #output 2: list of times to calculate, elapse
     x = [0] * (n + 1)
     start = [0] * (n + 1)
     end = [0] * (n + 1)
