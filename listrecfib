@@ -13,7 +13,7 @@ def listrecfib(n):
         end[i] = time.time()            # ith end time 
         elapse[i] = end[i] - start[i]   # ith elapsed time
         elapse[i] = round(elapse[i], 9) # round elapsed time 
-    elapse = sum(elapse)                # add all ith elapses = total time elapsed
-    return x, elapse                    # exit loop, return fiboacci list x and time elapsed
+    elapse_total = sum(elapse)                # add all ith elapses = total time elapsed
+    return x, elapse, elapse_total            # exit loop, return fiboacci list x and time elapsed
     
 print(listrecfib(30))
