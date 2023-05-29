@@ -1,0 +1,12 @@
+def recfib(n):
+    #input: non-negative integer n
+    #ouput: the nth non-trivial fib. number
+    if isinstance(n, int) == 1 and n >= 0:    #executes only for non-negative integers
+        if n == 0:    #base case 0
+            return 0
+        elif n == 1:  #base case 1
+            return 1
+        else:         #non-trivial case, n >= 2
+            return recfib(n - 1) + recfib(n - 2)    #recursion, sum of the previous two function values
+    else:
+        print("n must be a non-negative integer")
