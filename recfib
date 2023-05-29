@@ -1,4 +1,5 @@
 def recfib(n):
+    #function calculating nth fib. number using recursion
     #input: non-negative integer n
     #ouput: the nth non-trivial fib. number
     if isinstance(n, int) == 1 and n >= 0:    #executes only for non-negative integers
