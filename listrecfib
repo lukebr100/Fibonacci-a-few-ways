@@ -1,18 +1,19 @@
 def listrecfib(n):
-        #function calculating list of first n fib. numbers
-        #input: length of list
-        #output 1: list of n fib. numbers, x
-        #output 2: list of times to calculate, elapse
-    x = [0] * (n + 1)
-    start = [0] * (n + 1)
-    end = [0] * (n + 1)
-    elapse = [0] * (n + 1)
-    for i in range(1, n + 1):
-        start[i] = time.time()
-        x[i] = recfib(i)
-        end[i] = time.time()
-        elapse[i] = end[i] - start[i]
-        elapse[i] = round(elapse[i], 9)
-    return x, elapse
+                                        # function calculating list of first n fib. numbers
+                                        # input: length of list
+                                        # output 1: list of n fib. numbers, x
+                                        # output 2: list of times to calculate, elapse
+    x = [0] * n           # initalize fibonacci list
+    start = [0] * n       # initalize start time list
+    end = [0] * n         # initalize end time list
+    elapse = [0] * n      # initalize elapse time list, elapse = end - start
+    for i in range(1, n + 1):           # start loop rangeing from 
+        start[i] = time.time()          # ith start time
+        x[i] = recfib(i)                # recfib function call
+        end[i] = time.time()            # ith end time 
+        elapse[i] = end[i] - start[i]   # ith elapsed time
+        elapse[i] = round(elapse[i], 9) # round elapsed time 
+    elapse = sum(elapse)                # add all ith elapses = total time elapsed
+    return x, elapse                    # exit loop, return fiboacci list x and time elapsed
     
-print( listrecfib(30) )
+print(listrecfib(30))
