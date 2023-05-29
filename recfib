@@ -11,3 +11,11 @@ def recfib(n):
             return recfib(n - 1) + recfib(n - 2)    #recursion, sum of the previous two function values
     else:
         print("n must be a non-negative integer")
+       
+start = time.time()     #start timer
+x = recfib(2)           #call function w/ n == 2
+end = time.time()       #end timer
+elapse = end - start    #calculate elapse time
+elapse = round(elapse, 9) #round elapsed time, ninth decimal
+print(elapse)           #print elapsed time rounded to 9 decimals 
+print(x)                #print requested 2nd non-trivial fib. number 
