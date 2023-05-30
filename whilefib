@@ -17,3 +17,14 @@ def whilefib(n):  #function fibonacci sequence using while loop
             return whilefib     
     else:                                       #executes if n is not valid
         print("n must be a non-negative integer")
+      
+def timer_while_fib(n)
+              # function to calculate time to produce a list of n + 1 fib. numbers
+              # input: natural number
+              # output 1: list of fibonacci numbers
+              # output 2: time spent running 
+  start = time.time()
+  forfib(n)
+  end = time.time()
+  elapse = end - start
+  return forfib(n)
