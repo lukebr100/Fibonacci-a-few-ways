@@ -12,7 +12,7 @@ def forfib(n):
         else:                                       # non-trivial case n >= 2
             G = [0 for _ in range(n)]                # intialize vector of zeros of length n
             tildeF = F + G                           # concatenate first two fib. numbers w/ list of (n - 1) zeros
-            for i in range(2, n + 1):                  # for i from zero to n - 2
+            for i in range(2, n + 2):                  # for i from zero to n - 2
                 tildeF[i] = tildeF[i - 1] + tildeF[i - 2]       # the next fib. number is the sum of the previous two
             return tildeF                           # returns the list of fib nums
     else:                                           # only executes if user inputs invalid 'n'
