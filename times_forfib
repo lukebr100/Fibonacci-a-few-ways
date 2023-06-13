@@ -8,6 +8,7 @@ def times_forfib(n):
     forfib(n)
     end = time.time()
     elapse[i] = end - start
+    print(elapse[i])
   
  return(elapse)
  
