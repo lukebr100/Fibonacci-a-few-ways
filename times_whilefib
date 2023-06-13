@@ -7,5 +7,6 @@ def times_fibwhile(n):
     whilefib(i)
     end = time.time()
     elapse[i] = end - start
+    print(elapse[i])
 
   return elapse
