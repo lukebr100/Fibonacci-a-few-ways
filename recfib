@@ -11,4 +11,4 @@ def recfib(n):
             return  recfib(n - 1)   + [recfib(n - 1)[n - 1] + recfib(n - 2)[n - 2]]            # the previous list of fib. numbers concatenated with
     else:                                                                                      # a list of the sum of the last entries two function values
         print("n must be a non-negative integer")    # executes only for non-natural numbers
-print(recfib(3))                                     # list of 3 non trivial fibonacci numbers
+print(recfib(10))                                     # list of 3 non trivial fibonacci numbers
