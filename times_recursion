@@ -5,5 +5,6 @@ def times_recfib(n):
         start = time.time()
         recfib(n)
         end = time.time()
+        print(elapse[i])
     return elapse
         
