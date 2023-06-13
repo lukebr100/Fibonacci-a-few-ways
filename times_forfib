@@ -5,7 +5,7 @@ def times_forfib(n):
 
   for i in range(n):
     start = time.time()
-    forfib(30)
+    forfib(n)
     end = time.time()
     elapse[i] = end - start
   
