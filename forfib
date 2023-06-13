@@ -3,7 +3,7 @@
 # output: list of n + 1 fib. numbers (n nontrivial numbers)
 
 def forfib(n): 
-    if isinstance(n, int) == 1 and n >= 0:          # exceutes if n is non-negative integer
+    if natural_number(n) == True:          # exceutes if n is non-negative integer
         F = [0, 1]                                  # base cases
         if n == 0:                                  # trivial case, 0th fib num
             return F.remove(1)                            # remove the element of F that equals 1, the only non-trivial number
