@@ -17,3 +17,4 @@ def forfib(n):
             return tildeF                           # returns the list of fib nums
     else:                                           # only executes if user inputs invalid 'n'
         print("n must be a non-negative integer") 
+print(forfib(10))
