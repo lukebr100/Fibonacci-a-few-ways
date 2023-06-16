@@ -1,3 +1,5 @@
+from natural_number import natural_number
+
 #function fibonacci sequence using while loop
 #input: n, non-negative integer
 #output: list of n + 1 fib. numbers (n nontrivial fib. numbers)
