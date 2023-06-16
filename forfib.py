@@ -1,3 +1,4 @@
+from natural_number import natural_number
 # function fibonacci sequence using for loop
 # input: n, non-negative integer
 # output: list of n + 1 fib. numbers (n nontrivial numbers)
@@ -17,4 +18,3 @@ def forfib(n):
             return tildeF                           # returns the list of fib nums
     else:                                           # only executes if user inputs invalid 'n'
         print("n must be a non-negative integer") 
-print(forfib(10))
