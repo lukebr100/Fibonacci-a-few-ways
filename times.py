@@ -1,27 +1,25 @@
 import time
-from forfib import forfib
-from recfib import recfib
-from whilefib import whilefib
+from methods import forfib, recfib, whilefib
 
 def fortime(n):
   start = time.time()
-  forfib(n)
+  N = forfib(n)
   end = time.time()
   elapse = end - start
-  return elapse
+  return elapse, N
 
 def rectime(n):
   start = time.time()
-  recfib(n)
+  N = recfib(n)
   end = time.time()
   elapse = end - start
-  return elapse
+  return elapse, N
 
 
 def whiletime(n):
   start = time.time()
-  whilefib(i)
+  N = whilefib(n)
   end = time.time()
   elapse = end - start
-  return elapse
+  return elapse, N
  
